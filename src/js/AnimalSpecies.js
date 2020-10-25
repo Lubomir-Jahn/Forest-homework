@@ -1,0 +1,3 @@
+/**
+ * Třída reprezentující druh zvířete
+ */

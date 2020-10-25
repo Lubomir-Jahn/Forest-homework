@@ -1,32 +1,62 @@
 body {
   min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   color: #1c78c0;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-.img-wrap {
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  object-fit: contain;
-  animation: rotating 10s linear infinite;
+.lists {
+  display: flex;
+  align-items: flex-start;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+.list {
+  min-width: 600px;
+  margin: 0;
+  padding: 15px 20px;
+  list-style: none;
+  border-radius: 6px;
 }
 
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list--trees {
+  background-color: rgb(180, 230, 175);
+}
+
+.list--trees .list-item {
+  color: #fff;
+  background-color: rgb(112, 187, 105);
+}
+
+.list--animals {
+  background-color: rgb(230, 191, 175);
+}
+
+.list--animals .list-item {
+  color: #fff;
+  background-color: rgb(187, 121, 105);
+}
+
+.list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-heading {
+  color: #fff;
+}
+
+.list-item {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 15px;
 }
