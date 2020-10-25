@@ -33,11 +33,13 @@ npm run build
 1. Čím se živí
 1. Stupeň ohrožení
 1. Celkovou populaci
+
 Pro stupně ohrožení si naimportuj objekt ze souboru conservationStatus využij ho. Pokud by vám vadily anglické názvy, klidně si je přepište do češtiny.
 
 Dále bude třída pro zvíře obsahovat metodu, která vytvoří html element li podle předlohy, kterou najdeš v index.html. Tento vytvořený element metoda bude vracet. Tříde může mít libovolný počet pomocných metod.
 
-Dalším krokem pro vás bude vytvořit třídu reprezentující les. Tato třída bude do konstruktoru brát pole již existujících zvířat, nebo nic (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
+Dalším krokem pro vás bude vytvořit třídu reprezentující les. Tato třída bude do konstruktoru brát pole již existujících zvířat, nebo nic 
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters).
 
 Dále tato třída bude obsahovat dvě metody:
 1. Pro přidání zvířete do pole k ostatním zvířatům
